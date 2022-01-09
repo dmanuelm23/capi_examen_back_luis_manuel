@@ -18,7 +18,7 @@ class UserDomicilioFactory extends Factory
             'user_id' => User::factory(),
             'domicilio' => $this->faker->address(),
             'numero_exterior' => $this->faker->buildingNumber(),
-            'colonia' => $this->faker->cityPrefix(),
+            'colonia' => $this->faker->streetSuffix(),
             'cp' => $this->faker->postcode(),
             'ciudad' => $this->faker->city(),
         ];
